@@ -27,7 +27,7 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
 
 ### Step 3. **Initialize, Review, and Deploy Terraform**
 
-**---> Go to Dev Environment**
+#### **Go to Dev Environment**
 
   -> cd t2s-bank/environments/dev
 
@@ -36,7 +36,7 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
   -> terraform apply
 
 
-**---> Go to Stage Environment**
+#### **Go to Stage Environment**
 
   -> cd ../stage
 
@@ -45,7 +45,7 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
   -> terraform apply
 
 
-**---> Go Prod Environment**
+#### **Go Prod Environment**
 
   -> cd ../prod
 
@@ -56,7 +56,7 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
   -> terraform apply
 
 
-**---> Go to the Primariy Directory**
+#### **Go to the Primariy Directory**
 
   -> cd 
 
