@@ -1,4 +1,4 @@
-# Creating a complete Core Banking System on AWS using Terraform
+# Deploying A complete Core Banking System on AWS using Terraform
 
 This repository contains Terraform configurations for provisioning Auto Scaling groups and SNS topics on AWS.
 
@@ -10,66 +10,82 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
 
 ## Steps
 
-### Step 1. **Clone the repository**
+### Step 1: Clone the Repository
 
-   -> git clone https://github.com/Messites/t2s-bank-terraform.git
+   -> git clone https://github.com/your-username/t2s-bank-terraform.git
    
    -> cd t2s-bank-terraform
 
-### Step 2. **Initialize and apply the bootstrap configuration**
+### Step 2: Initialize Terraform
 
-   -> cd t2s-bank/bootstrap
-
+#### Initialize envs/dev
+   -> cd t2s-bank/envs/dev
+   
    -> terraform init
 
+#### Initialize envs/stage
+   -> cd t2s-bank/envs/stage
+   
+   -> terraform init
+
+#### Initialize envs/prod
+   -> cd t2s-bank/envs/stage
+   
+   -> terraform init
+
+cd t2s-bank/envs/prod
+terraform init
+
+### Step 3: Plan and Review Terraform
+
+#### For Dev Environment
+   -> cd t2s-bank/envs/dev
+   
+   -> terraform plan
+
+#### For Stage Environment
+   -> cd t2s-bank/envs/stage
+   
+   -> terraform plan
+
+#### For Prod Environment
+   -> cd t2s-bank/envs/prod
+   
+   -> terraform plan
+
+### Step 4: Apply The Terraform Configuration
+
+#### For Dev Environment
+   -> cd t2s-bank/envs/dev
+   
    -> terraform apply
 
+#### For Stage Environment
+   -> cd t2s-bank/envs/stage
+   
+   -> terraform apply
 
-### Step 3. **Initialize, Review, and Deploy Terraform**
+#### For Prod Environment
+   -> cd t2s-bank/envs/prod
+   
+   -> terraform apply
 
-#### **Go to Dev Environment**
+### Step 5: Clean Up
 
-  -> cd t2s-bank/environments/dev
+#### For Dev Environment
+   -> cd t2s-bank/envs/dev
+   
+   -> terraform destroy
 
-  -> terraform init
+#### For Stage Environment
+   -> cd t2s-bank/envs/stage
+   
+   -> terraform destroy
 
-  -> terraform apply
-
-
-#### **Go to Stage Environment**
-
-  -> cd ../stage
-
-  -> terraform init
-
-  -> terraform apply
-
-
-#### **Go Prod Environment**
-
-  -> cd ../prod
-
-  -> terraform init
-
-  -> terraform plan
-
-  -> terraform apply
-
-
-#### **Go to the Primariy Directory**
-
-  -> cd 
-
-  -> terraform init
-
-  -> terraform plan
-
-  -> terraform apply
-
-
-## **Clean up whenever necessary**
-
-    -> terraform destroy
+#### For Prod Environment
+   -> cd t2s-bank/envs/prod
+   
+   -> terraform destroy
 
 ## Troubleshooting
 If you encounter any issues, please check the following:
@@ -80,6 +96,4 @@ If you encounter any issues, please check the following:
 
 ## Contributing
 Feel free to customize this `README.md` file according to your specific requirements and project details.
-
-
 
