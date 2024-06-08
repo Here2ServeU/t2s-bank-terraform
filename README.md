@@ -12,7 +12,7 @@ This repository contains Terraform configurations for provisioning Auto Scaling 
 
 ### Step 1: Clone the Repository
 
-   -> git clone https://github.com/your-username/t2s-bank-terraform.git
+   -> git clone https://github.com/Here2ServerU/t2s-bank-terraform.git
    
    -> cd t2s-bank-terraform
 
