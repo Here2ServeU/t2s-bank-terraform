@@ -1,6 +1,6 @@
 # Deploying A complete Core Banking System on AWS using Terraform
 
-This repository contains Terraform configurations for provisioning Auto Scaling groups and SNS topics on AWS.
+This repository contains Terraform configurations for provisioning A complete Core Banking System on AWS. 
 
 ## Prerequisites
 
