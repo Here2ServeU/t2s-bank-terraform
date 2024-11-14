@@ -20,10 +20,12 @@ An AWS account
 
 ```bash
 git clone https://github.com/Here2ServerU/t2s-bank-terraform.git
-```
-   
-```bash
 cd t2s-bank-terraform
+```
+
+Create an S3 Bucket and name it, "t2s-bank-tf-state."
+```bash
+aws s3api delete-bucket --bucket t2s-bank-tf-state --region us-east-1
 ```
 
 ### Step 2: Initialize Terraform
