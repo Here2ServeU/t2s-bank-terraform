@@ -31,18 +31,12 @@ cd t2s-bank-terraform
 Initialize envs/dev
 ```bash
 cd t2s-bank/envs/dev
-```
-   
-```bash
 terraform init
 ```
 
 Initialize envs/stage
 ```bash
 cd t2s-bank/envs/stage
-```
-   
-```bash
 terraform init
 ```
 
